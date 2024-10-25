@@ -1,5 +1,5 @@
 
-/*--------------- basic styling --------------- */
+/*---------------style.css --------------- */
 html, body {
       margin: 0;
       padding: 0;
@@ -9,6 +9,8 @@ html, body {
       background: #0f0f0f !important;
       color: #fff !important;
 }
+
+
 
 .whitespace {
       width: 100%;
@@ -68,7 +70,7 @@ html, body {
 }
 
 /*--------------- navigation --------------- */
-nav {
+/* nav {
       width: 100%;
       background: #0f0f0f;
       height: 80px;
@@ -88,7 +90,7 @@ nav #brand a {
       color: #fff;
       transition: all 0.3s ease-out;
     
-}
+} */
 
 .brand-name{
   @media (max-width:360px) {
@@ -330,7 +332,8 @@ h6 {
 }
 
 .project {
-      height: 500px;
+      height:500px;
+      width:500px;
 }
 
 .project1 {
@@ -388,16 +391,16 @@ h6 {
 }
 
 .project2a{
-      background: url(./images/Genesis-project-rep.png) no-repeat 50% 50%;
+      background: url(./images/marirose.png) no-repeat 50% 50%;
       background-size: cover;   
 }
 
 .project2a::after {
-      content: "Genesis Real Estate Website.";
+      content: " Vegetable delivery App";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: rgb(204, 204, 204);
+      color: white;
       display: block;
       top: 80%;
       left: 90%;
@@ -410,12 +413,12 @@ a:hover{
 }
 
 .project3 {
-      background: url(./images/Premium\ Vector\ _\ Real\ Estate\ Logo.jfif) no-repeat 50% 50%;
+      background: url(./images/Genesis-project-rep.png) no-repeat 50% 50%;
       background-size: cover;
 }
 
 .project3::after {
-      content: "Real Eastate.";
+      content: "Genesis Real Eastate.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -433,80 +436,13 @@ a:hover{
       background-size: cover;
 }
 
-.project5{
-      background: url(./images/Blank\ Notebook\,\ Notebook.jpeg) no-repeat 50% 50%;
-      background-size: cover;  
-}
-.project5::after {
-      content: "Notebook App.";
-      font-family: "Roboto Mono";
-      font-size: 36px;
-      position: relative;
-      color: #fff;
-      display: block;
-      top: 8%;
-      left: -60%;
-      right: 0;
-      bottom: 0;
-}
-
-.project6{
-      background: url(./images/Calculator\ Icon\ .jpeg) no-repeat 50% 50%;
-      background-size: cover;   
-}
-
-.project6::after{
-      content: "Calculator App.";
-      font-family: "Roboto Mono";
-      font-size: 36px;
-      position: relative;
-      color: #fff;
-      display: block;
-      top: 10%;
-      left: 90%;
-      right: 0;
-      bottom: 0;
-      text-decoration: none;
-}
-
-/* .project2 {
-      background: url(./images/Premium\ Vector\ _\ Real\ Estate\ Logo.jfif) no-repeat 50% 50%;
-      background-size: cover;
-}
-
-.project2::after {
-      content: "Real Eastate.";
-      font-family: "Roboto Mono";
-      font-size: 36px;
-      position: relative;
-      color: #fff;
-      display: block;
-      top: 80%;
-      left: 90%;
-      right: 0;
-      bottom: 0;
-} */
 
 
 
-
-.project4::after {
-      content: "Car Rental App.";
-      font-family: "Roboto Mono";
-      font-size: 36px;
-      position: relative;
-      color: #fff;
-      display: block;
-      top: 10%;
-      left: 90%;
-      right: 0;
-      bottom: 0;
-      text-decoration: none;
-}
 
 @media(max-width: 768px) {
       .project {
-            width: 90% !important;
+            /* width: 90% !important; */
             margin: 14px auto;
       }
 
@@ -542,7 +478,7 @@ a:hover{
 }
 
 .info p {
-      color: grey;
+  color:#ed008a ;
       font-weight: lighter;
 }
 
@@ -650,7 +586,7 @@ a:hover{
 }
 
 .image2 {
-      background: url(./images/genesis-website.png) no-repeat 50% 70%;
+      background: url(./images/gen-web-rep2.png) no-repeat 50% 70%;
       background-position-x: center;
       background-size: cover;
 }
@@ -693,21 +629,30 @@ a:hover{
 /*---------------about page --------------- */
 
 .about {
-      height: 500px;
+      position: relative;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      overflow: hidden;
       margin-top: 120px;
-}
+    }
+    
+    .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
 
-
-.image {
-      background: url(./images/Giulia\ @ArternDesign.jpeg) no-repeat 50% 70%;
-      background-position-x: center;
-      background-size: cover;
-}
 
 /*--------------- contact form --------------- */
 
 #contact-form {
       margin: 5% 1.4%;
+}
+.pink{
+      color: #ed008a;
 }
 
 #contact-form ul {
@@ -766,8 +711,10 @@ textarea:focus {
 }
 
 .send:hover {
-      background: #dfdfdf;
-      color: #101010;
+      background: #0f0f0f;
+      color: #ed008a;
+      border-left: solid#ed008a;
+      border-top: solid#ed008a;
 }
 
 @media(max-width: 768px) {
@@ -789,4 +736,149 @@ textarea:focus {
 
 .next p {
       text-align: right;
+}
+
+
+#address .pink{
+      color:#ed008a ;
+}
+
+#media .pink{
+      color:#ed008a ;
+}
+
+#personal .pink{
+      color:#ed008a ;   
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper header {
+  padding: 40px 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .logo-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+nav .togglebtn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 45px;
+  right: 3%;
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+}
+
+nav .togglebtn span {
+  display: block;
+  background-color: #ed008a;
+  margin: 5px 0px;
+  width: 100%;
+  height: 3px;
+  transition: 0.3s;
+  transition-property: transform, opacity;
+}
+
+nav .navlinks {
+  list-style-type: none;
+}
+
+nav .navlinks li {
+  display: inline-block;
+}
+
+nav .navlinks li a {
+  color: #e5e5e5;
+  margin-right: 2.5rem;
+}
+
+/* Responsive design for displaying navbar on small screens */
+@media (max-width: 930px) {
+  nav .togglebtn {
+    display: initial;
+  }
+
+  /* for toggle button */
+  .click {
+    top: 45px;
+  }
+  
+  .click span {
+    position: absolute;
+    margin-top: 12px;
+  }
+  
+  .click span:first-child {
+    transform: rotate(-40deg);
+  }
+  
+  .click span:nth-child(2) {
+    opacity: 0;
+    margin: 0;
+  }
+  
+  .click span:last-child {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  nav .navlinks {
+    position: absolute;
+    top: 110px;
+    right: -100%;
+    bottom: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #222;
+    z-index: 3;
+    box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    padding: 25px 0px;
+  }
+
+  nav .navlinks li {
+    display: block;
+  }
+
+  nav .navlinks li a {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  nav .navlinks.open {
+    right: 0;
+  }
 }

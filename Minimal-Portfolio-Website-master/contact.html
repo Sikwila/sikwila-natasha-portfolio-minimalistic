@@ -1,177 +1,86 @@
+<!-- /*Contact.html*/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="natashasikwila" />
-
-    <title>Contact</title>
-
-    <!-- stylesheet -->
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- bootstrap cdns -->
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <!-- Bootstrap CDNs -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- google fonts -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
       rel="stylesheet"
     />
-
-    <!-- for on scroll animations -->
+    <!-- For on scroll animations -->
     <link rel="stylesheet" href="animate.css" />
     <script src="wow.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <!--------------- navbar starts here --------------->
-      <nav>
-        <span id="brand">
-          <a href="index.html">Sikwila Tech Solutions</a>
-        </span>
-
-        <ul id="menu">
-          <li>
-            <a href="index.html">home<span>.</span></a>
-          </li>
-          <li>
-            <a href="work.html">work<span>.</span></a>
-          </li>
-          <li>
-            <a href="about.html">about me<span>.</span></a>
-          </li>
-          <li>
-            <a href="contact.html">contact<span>.</span></a>
-          </li>
-        </ul>
-
-        <div id="toggle">
-          <div class="span">menu</div>
+      <!--------------- Navbar starts here --------------->
+      <header>
+        <div class="logo">
+          <div>Sikwila Tech Solutions</div>
         </div>
-      </nav>
-
-      <div id="resize">
-        <div class="close-btn">close</div>
-
-        <ul id="menu">
-          <li>
-            <a href="index.html">home<span>.</span></a>
-          </li>
-          <li>
-            <a href="work.html">work<span>.</span></a>
-          </li>
-          <li>
-            <a href="about.html">about me<span>.</span></a>
-          </li>
-          <li>
-            <a href="contact.html">contact<span>.</span></a>
-          </li>
-        </ul>
-      </div>
-
-      <!--------------- navbar ends here --------------->
-
-      <div class="whitespace"></div>
-
-      <!--------------- hero section starts here say hello 👋 --------------->
-      <div class="container">
-        <div class="hero-content">
-          <br /><br />
-
-          <div class="row">
-            <div class="col-lg-8">
-              <h3 class="wow fadeInUp" data-wow-delay="1s">say hello 👋</h3>
-              <br />
-              <p class="wow fadeInUp" data-wow-delay="1.2s">
-                "The more we share, the more we have." - Unknown Let's connect!
-                Interested in discussing your project or exploring how I can
-                help? If you have internship or learnership opportunities I'd
-                appreaciate you contacting me.
-              </p>
-            </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </div>
+          <ul class="navlinks">
+            <li>
+              <a href="./index.html">Home<span>.</span></a>
+            </li>
+            <li>
+              <a href="./work.html">Portfolio<span>.</span></a>
+            </li>
+            <li>
+              <a href="about.html">About Me<span>.</span></a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact<span>.</span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--------------- Navbar ends here --------------->
+      <div class="welcome-text">
+        <h2>Get In Touch</h2>
+        <p>Transforming your ideas into beautifully coded web experiences.</p>
       </div>
-      <!--------------- hero section ends here --------------->
-
-      <!-- <div class="whitespace"></div> -->
-
-      <!--------------- form section starts here --------------->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-8">
-            <form name="contact-form" id="contact-form" method="post" action="">
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay="1.4s">
-                  <label for="contact-name">Name :</label>
-                  <div class="textarea">
-                    <input
-                      type="text"
-                      name="contact-name"
-                      id="contact-name"
-                      value=""
-                      required
-                    />
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-email">Email :</label>
-                  <div class="textarea">
-                    <input
-                      type="email"
-                      name="contact-email"
-                      id="contact-email"
-                      value=""
-                      required
-                    />
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-project">Message :</label>
-                  <div class="textarea">
-                    <textarea
-                      type="email"
-                      name="contact-project"
-                      id="contact-project"
-                      rows="6"
-                      value=""
-                      required
-                    >
-                    </textarea>
-                  </div>
-                </li>
-              </ul>
-
-              <button
-                type="submit"
-                name="contact-submit"
-                id="contact-submit"
-                class="send wow fadeInUp"
-              >
-                Send Message
-              </button>
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-image">
+            <img
+              src="https://i.pinimg.com/564x/78/77/c9/7877c9cec47634f687f55499b7bf0896.jpg"
+              alt="Contact Image"
+            />
+          </div>
+          <div class="contact-form">
+            <form action="#">
+              <input type="text" placeholder="Full Name" required />
+              <input type="email" placeholder="Enter Your Email" required />
+              <input type="tel" placeholder="Your Number" required />
+              <textarea placeholder="Message" rows="4" required></textarea>
+              <button type="submit">Message</button>
             </form>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!--------------- form section ends here --------------->
-
-      <div class="whitespace"></div>
-
-      <!--------------- footer starts here --------------->
+      <!--------------- Footer starts here --------------->
       <div class="footer">
         <div class="container">
           <br /><br />
-
           <div class="collab">
             <div class="row">
               <div class="col-lg-12">
@@ -181,55 +90,48 @@
               </div>
             </div>
           </div>
-
           <br />
-
           <div class="hr">
             <div class="row"></div>
           </div>
-
           <br /><br />
-
           <div class="info">
             <div class="row">
               <div class="col-lg-4" id="personal">
-                <p class="wow fadeInUp">connect with me</p>
+                <p class="wow fadeInUp pink">connect with me</p>
                 <h4 class="wow fadeInUp" data-wow-delay="0.2s">
                   ig @natashasikwila
                 </h4>
                 <br /><br />
               </div>
-
               <div class="col-lg-4" id="media">
-                <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                <ul class="connection">
-                  <a href="https://github.com/Sikwila"
-                    ><li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">
-                      git
-                    </li></a
-                  >
-                  <a href="https://www.linkedin.com/in/natashasikwila"
-                    ><li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">
-                      li
-                    </li></a
-                  >
-                  <a href="https://wa.me/+263779480718"
-                    ><li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">
-                      wa
-                    </li></a
-                  >
+                <p class="wow fadeInUp pink" data-wow-delay="0s">follow me</p>
+                <ul>
+                  <a href="">
+                    <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">
+                      fb
+                    </li>
+                  </a>
+                  <a href="">
+                    <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">
+                      ig
+                    </li>
+                  </a>
+                  <a href="">
+                    <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">
+                      tw
+                    </li>
+                  </a>
+                  <a href="">
+                    <li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li>
+                  </a>
                 </ul>
-
                 <br /><br />
               </div>
-
               <div class="col-lg-4" id="address">
-                <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                <p class="wow fadeInUp pink" data-wow-delay="0s">say hello</p>
                 <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                  <a href="mailto:sikwilanatasha04@gmail.com" class="my-email"
-                    >sikwilanatasha04@gmail.com</a
-                  >
+                  natashasikwila04@gmail.com
                 </h4>
                 <br /><br />
               </div>
@@ -237,57 +139,17 @@
           </div>
         </div>
       </div>
-      <!--------------- footer ends here --------------->
-
-      <br /><br /><br /><br />
+      <!--------------- Footer ends here --------------->
     </div>
 
-    <!-- greensock cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+      const toggleBtn = document.querySelector(".togglebtn");
+      const navlinks = document.querySelector(".navlinks");
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-      // navigation starts here
-      $("#toggle").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
+      toggleBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("open");
+        toggleBtn.classList.toggle("click");
       });
-
-      $("#resize ul li a").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
-
-      $(".close-btn").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
-
-      // navigation ends here
-
-      // nav animation
-
-      TweenMax.from("#brand", 1, {
-        delay: 0.4,
-        y: 10,
-        opacity: 0,
-        ease: Expo.easeInOut,
-      });
-
-      TweenMax.staggerFrom(
-        "#menu li a",
-        1,
-        {
-          delay: 0.4,
-          opacity: 0,
-          ease: Expo.easeInOut,
-        },
-        0.1
-      );
-
-      // nav animation ends
-
-      new WOW().init();
     </script>
   </body>
 </html>

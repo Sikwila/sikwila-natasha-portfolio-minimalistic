@@ -2,313 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="natashasikwila" />
-
-    <title>Sikwila Natasha Portfolio Website</title>
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
-
-    <!-- bootstrap cdns -->
+    <title>Sikwila Tech Solutions Portfolio Website</title>
+    <link rel="stylesheet" href="new.css" />
+    <!----Font awesome cdn  font icon css -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
-      rel="stylesheet"
-    />
-
-    <!-- terminal effect -->
-    <script src="t.min.js"></script>
-
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="animate.css" />
-    <script src="wow.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <!--------------- navbar starts here --------------->
-      <nav>
-        <span id="brand">
-          <a href="index.html">Sikwila Tech Solutions</a>
-        </span>
-
-        <ul id="menu">
-          <li>
-            <a href="index.html">home<span>.</span></a>
-          </li>
-          <li>
-            <a href="work.html">work<span>.</span></a>
-          </li>
-          <li>
-            <a href="about.html">about me<span>.</span></a>
-          </li>
-          <li>
-            <a href="contact.html">contact<span>.</span></a>
-          </li>
-        </ul>
-
-        <div id="toggle">
-          <div class="span">menu</div>
-        </div>
-      </nav>
-
-      <div id="resize">
-        <div class="close-btn">close</div>
-
-        <ul id="menu">
-          <li>
-            <a href="index.html">home<span>.</span></a>
-          </li>
-          <li>
-            <a href="work.html">work<span>.</span></a>
-          </li>
-          <li>
-            <a href="about.html">about me<span>.</span></a>
-          </li>
-          <li>
-            <a href="contact.html">contact<span>.</span></a>
-          </li>
-        </ul>
-      </div>
-      <!--------------- navbar ends here --------------->
-
-      <!--------------- hero section starts here --------------->
-      <div class="hero">
-        <div class="header">
-          <h1 class="line anim-typewriter">
-            Designing Dreams, Coding Realities
-          </h1>
-        </div>
-      </div>
-
-      <div class="scroll-down"></div>
-      <!--------------- hero section ends here --------------->
-
-      <!--------------- projects section starts here --------------->
-      <div class="container-fluid">
-        <br /><br /><br />
-
-        <h6>Selected projects</h6>
-
-        <div class="vertical"></div>
-        <br />
-
-        <div class="whitespace"></div>
-        <div class="whitespace"></div>
-
-        <div class="row">
-          <div class="col-lg-8"></div>
-
-          <div
-            class="col-lg-4 project project1 wow fadeInUp"
-            onclick="location.href='project.html'"
-          ></div>
-        </div>
-
-        <div class="whitespace"></div>
-
-        <a href="./project5.html">
-          <div class="row">
-            <div
-              class="col-lg-6 project project2 wow fadeInUp"
-              onclick="location.href=''"
-            ></div>
-
-            <div class="col-lg-6"></div>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <!-- <i class="fa-solid fa-a"></i> -->
+            <div class="logo-text">Sikwila Tech Solutions</div>
           </div>
-        </a>
-
-        <div class="whitespace"></div>
-
-        <a href="./project2.html">
-          <div class="row">
-            <div class="col-lg-7"></div>
-
-            <div
-              class="col-lg-4 project project3 wow fadeInUp"
-              onclick="location.href='project.html'"
-            ></div>
-
-            <div class="col-lg-1"></div>
-          </div>
-        </a>
-
-        <div class="whitespace"></div>
-
-        <a href="./project4.html">
-          <div class="row">
-            <div class="col-lg-1"></div>
-
-            <div
-              class="col-lg-5 project project4 wow fadeInUp"
-              onclick="location.href=''"
-            ></div>
-
-            <div class="col-lg-6"></div>
-          </div>
-        </a>
-
-        <div class="whitespace"></div>
-
-        <a href="./project3.html" class="links">
-          <div class="row">
-            <div class="col-lg-7"></div>
-
-            <div
-              class="col-lg-4 project project5 wow fadeInUp"
-              onclick="location.href=''"
-            ></div>
-
-            <div class="col-lg-1"></div>
-          </div>
-        </a>
-
-        <div class="whitespace"></div>
-
-        <a href="./project4.html" class="links">
-          <div class="row">
-            <div
-              class="col-lg-4 project project6 wow fadeInUp"
-              data-wow-delay="1.2s"
-              onclick="location.href=''"
-            ></div>
-
-            <div class="col-lg-6"></div>
-          </div>
-        </a>
-      </div>
-      <!--------------- projects section ends here --------------->
-
-      <!--------------- footer starts here --------------->
-      <div class="footer">
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li>
+                <a href="#">Home<span>.</span></a>
+              </li>
+              <li><a href="./work.html">Portfolio</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
         <div class="container">
-          <br /><br />
+          <div class="hero-img">
+            <div class="my-img"></div>
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm a <span class="input">Frontend Developer</span></h5>
+            <h1>Natasha Sikwila</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              delectus dolorum quibusdam maiores magni quod rem in porro,
+              laborum, laudantium ex repellendus explicabo, autem molestiae!
+            </p>
 
-          <div class="collab">
-            <div class="row">
-              <div class="col-lg-12">
-                <a href="./work2.html" class="view-more-link">View More</a>
-                <p class="wow fadeInUp">
-                  Got an interesting project? I can help you.
-                </p>
-              </div>
+            <div class="btn-group">
+              <a href="#" class="btn active">Download CV</a>
+              <a href="#" class="btn">Contact</a>
             </div>
-          </div>
 
-          <br />
-
-          <div class="hr">
-            <div class="row"></div>
-          </div>
-
-          <br /><br />
-
-          <div class="info">
-            <div class="row">
-              <div class="col-lg-4" id="personal">
-                <p class="wow fadeInUp">connect with me</p>
-                <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                  linkedIn @sikwilanatasha
-                </h4>
-                <br /><br />
-              </div>
-
-              <div class="col-lg-4" id="media">
-                <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                <ul class="connection">
-                  <a href="https://github.com/Sikwila"
-                    ><li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">
-                      git
-                    </li></a
-                  >
-                  <a href="https://www.linkedin.com/in/natashasikwila"
-                    ><li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">
-                      li
-                    </li></a
-                  >
-                  <a href="https://wa.me/+263779480718"
-                    ><li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">
-                      wa
-                    </li></a
-                  >
-                </ul>
-
-                <br /><br />
-              </div>
-
-              <div class="col-lg-4" id="address">
-                <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                  <a href="mailto:sikwilanatasha04@gmail.com" class="my-email"
-                    >sikwilanatasha04@gmail.com</a
-                  >
-                </h4>
-                <br /><br />
-              </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-pintrest"></i></a>
             </div>
           </div>
         </div>
       </div>
-      <!--------------- footer ends here --------------->
-
-      <br /><br /><br /><br />
     </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
 
-    <!-- greensock cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-      // navigation starts here
-
-      $("#toggle").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
       });
 
-      $("#resize ul li a").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
+      var typed = new Typed(".input", {
+        strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true,
       });
-
-      $(".close-btn").click(function () {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
-      });
-
-      // navigation ends here
-
-      // nav animation
-
-      TweenMax.from("#brand", 1, {
-        delay: 0.4,
-        y: 10,
-        opacity: 0,
-        ease: Expo.easeInOut,
-      });
-
-      TweenMax.staggerFrom(
-        "#menu li a",
-        1,
-        {
-          delay: 0.4,
-          opacity: 0,
-          ease: Expo.easeInOut,
-        },
-        0.1
-      );
-
-      // nav animation ends
-
-      new WOW().init();
     </script>
   </body>
 </html>
